@@ -1,0 +1,355 @@
+/* =================================================
+
+stylesheet for "jan.bplaced.net"
+
+latest update: 	2020-04-15
+written by: 	jan scheidegger
+
+================================================== */ 
+
+* { margin: 0; padding: 0; }						/* Was ist aktuell? */
+
+body {
+    background: black url(./reise-fotos/olten_blurry.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#image {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#alert {
+    background-color: rgba(5, 5, 5, .9);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, .9);
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 4;
+}
+  
+#alert-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+#header {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+  
+#header a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#hamburger-icon {
+    cursor: pointer;
+    width: 30px;
+}
+
+#copyright {
+    bottom: 20px;
+    color: rgba(255, 255, 255, .9);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+    position: fixed;
+    right: 20px;
+    text-align: right;
+}
+
+#scrollToTop {
+    bottom: 20px; 
+    display: none;
+    position: fixed;
+    right: 20px;
+    width: 30px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+    width: 100%;
+}
+
+.main-text-border {
+    border-left: 3px solid rgba(255, 255, 255, .9);
+    padding: 0 4px;
+}
+  
+.main-text {
+    text-align: left;
+}
+
+.main-text h1 {
+    border-left: 1px solid rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, .9);
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+}
+
+.main-text h2 {
+    border-left: 1px solid rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, .9);
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.main-text p {
+    color: rgba(255, 255, 255, .9);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem; 
+    line-height: 1.5rem;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    max-width: 725px;
+}
+
+.main-text a {
+
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-text ul {
+    color: rgba(255, 255, 255, .9);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem; 
+    list-style-type: none;
+    margin-bottom: 10px;
+    max-width: 725px;
+    padding: 0 9px;   
+}
+
+.main-text li {
+    display: inline;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 10px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 30px 0;
+}
+
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.fotos {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+    margin: 0 10px 20px 10px;
+    position: relative;
+}
+
+.fotos img {
+    box-sizing: border-box;
+    width: 100%; 
+}
+  
+.lazyload {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.cover {
+    background-color: rgba(5, 5, 5, .4);
+    bottom: 0;
+    box-sizing: border-box;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .5s ease;
+    width: 100%;
+}
+
+/* .overlay:hover, .overlay:active {
+    border-radius: 10px;
+    opacity: 1;
+} */
+
+.hover {
+    opacity: 1;
+}
+
+.overlay {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.caption {
+    background-color:rgba(5, 5, 5, .8);
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, .9);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem; 
+    line-height: 1.5rem;
+    max-width: 768px;
+    padding: 15px;
+}
+  
+.link {
+    padding: 10px;
+    width: 150px;
+}
+
+.link a {
+    align-items: center;
+    color:rgba(255, 255, 255, .9);
+    display: flex;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+  
+.link img {
+    height: 32px;
+    margin: 0 10px;
+    width: 32px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+video {
+    border-radius: 100%;
+}
+
+#menu {
+    background-color: rgba(5, 5, 5, .8); /* rgba(32, 32, 32, 0.9); */
+    height: 100%;
+    left: -100vw;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 3;
+}
+  
+#close-menu {
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+    
+#close-icon {
+    width: 30px;	
+}
+  
+#menu ul {
+    list-style-type: none;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+#menu li {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+  
+#menu a {
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 720px) {
+
+#specific-page body {
+    background: rgb(29, 39, 50);
+    background-image: none;
+}
+
+#image {
+    display: none;
+}
+
+#header {
+    padding: 0;
+}
+  
+#hamburger-icon {
+	margin: 15px;
+}
+
+#scrollToTop {
+    bottom: 15px;
+    right: 15px;
+}
+
+.fotos {
+    margin: 0;
+}
+
+.fotos img {
+    box-shadow: none;
+}
+
+/* .fotos:hover .overlay, .fotos:active .overlay {
+    border-radius: 0;
+} */
+
+#close-menu {
+	padding: 15px;
+}
+
+}
+
+@media only screen and (min-width: 720px) {
+
+.main-text a:hover {
+    font-weight: bold;
+}
+
+#menu a:hover {
+    font-weight: bold;
+}
+
+}
