@@ -10,7 +10,7 @@ written by: 	jan scheidegger
 * { margin: 0; padding: 0; }						/* Was ist aktuell? */
 
 body {
-    background: black url(./reise-fotos/olten_blurry.jpg) no-repeat center center fixed;
+    background: black url(./resources/olten_blurry.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 

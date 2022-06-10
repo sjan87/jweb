@@ -4,5 +4,5 @@ bigImage.onload = function() {
     blurry.style.backgroundImage = `url(${bigImage.src})`;
 }
 setTimeout(function() {
-    bigImage.src = "./reise-fotos/olten.jpg";
+    bigImage.src = "./resources/olten.jpg";
 }, 1000)
